@@ -1,0 +1,71 @@
+/*Contact section START*/
+.contact {
+  color: white;
+  background: black;
+  padding: 70px 0 70px 0;
+  .heading {
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+    transform: translateY(50px);
+    opacity: 0;
+    h2 {
+      @include h2-heading;
+    }
+  }
+  .contact-info {
+    padding: 60px 0;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+    transform: translateY(50px);
+    opacity: 0;
+    position: relative;
+    .phone-mail {
+      h3 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      //Show phone num and mail on hover (jQuery)
+      .phone {
+        opacity: 0;
+        transition: 0.7s ease;
+        letter-spacing: 2px;
+      }
+      .email {
+        opacity: 0;
+        transition: 0.7s ease;
+        letter-spacing: 2px;
+      }
+    }
+    .social-links {
+      padding-bottom: 90px;
+      @include social-links-contact;
+      margin-left: 22px;
+      .phone-mail-mobile {
+        display: none;
+      }
+    }
+  }
+  .signature {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      margin-top: 40px;
+      font-size: $signatureFontSizeXl;
+      opacity: 0.2;
+      letter-spacing: 1.5px;
+    }
+    h5 {
+      font-size: $signatureFontSizeXl;
+      opacity: 0.2;
+      letter-spacing: 1.5px;
+      margin-top: 40px;
+    }
+  }
+  .show-contact {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*Contact section END*/

@@ -1,0 +1,906 @@
+/*Media query START*/
+@media (max-width: 1200px) {
+  .overlay {
+    .wrap {
+      .wrap-nav {
+        .navigation-item {
+          &::before {
+            font-size: $beforeElementNavLinkLg;
+          }
+        }
+      }
+    }
+  }
+  .landing-page {
+    .heading {
+      top: 65%;
+    }
+  }
+  .about {
+    .about-img {
+      .img {
+        width: 380px;
+        height: 500px;
+      }
+    }
+    .about-info {
+      h2 {
+        font-size: $h2FontSizeLg;
+      }
+      h3 {
+        font-size: $h3SectionLg;
+      }
+      p {
+        font-size: $pSectionLg;
+      }
+      .btn-resume {
+        padding: 13px 18px;
+      }
+      .social-links {
+        a {
+          padding: 13px;
+        }
+      }
+    }
+  }
+  .portfolio {
+    .heading {
+      h1 {
+        font-size: $h2FontSizeLg;
+      }
+    }
+    .project-img {
+      .portfolio-img {
+        width: 350px;
+        height: 450px;
+      }
+    }
+    .project-description {
+      padding-top: 30px;
+      h3 {
+        font-size: $h3SectionLg;
+      }
+      p {
+        font-size: $pSectionLg;
+        &::before {
+          font-size: $pBeforeElementFontSizeLg;
+        }
+      }
+      a {
+        padding: 13px 18px;
+      }
+    }
+  }
+  .contact {
+    .heading {
+      h2 {
+        font-size: $h2FontSizeLg;
+      }
+    }
+    .contact-info {
+      .phone-mail {
+        .phone {
+          font-size: $pSectionXl + 5px;
+        }
+        .email {
+          font-size: $pSectionXl + 5px;
+        }
+      }
+      .social-links {
+        a {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  //CV
+  .cv {
+    .img-section {
+      .id-img {
+        width: 280px;
+        height: 360px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    .logo {
+      h2 {
+        font-size: $logoFontSizeMd;
+      }
+    }
+  }
+  .overlay {
+    .wrap {
+      .wrap-nav {
+        .navigation-item {
+          &::before {
+            font-size: $beforeElementNavLinkMd;
+          }
+        }
+      }
+    }
+  }
+  .landing-page {
+    .heading {
+      h1 {
+        font-size: $h1HeadingFontSizeMd;
+      }
+      .typing {
+        font-size: $typingFontSizeMd;
+      }
+    }
+  }
+  .about {
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-img {
+      display: none;
+      .img {
+        width: 300px;
+        height: 400px;
+        margin-top: 120px;
+      }
+    }
+    .about-info {
+      text-align: center;
+      padding-left: 0;
+      h2 {
+        font-size: $h2FontSizeMd;
+      }
+      h3 {
+        font-size: $h3SectionMd;
+      }
+      p {
+        font-size: $pSectionMd;
+      }
+      .btn-resume {
+        padding: 10px 15px;
+      }
+      .social-links {
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .portfolio {
+    .heading {
+      text-align: center;
+      h2 {
+        font-size: $h2FontSizeMd;
+      }
+    }
+    .project-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 70px;
+      .portfolio-img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    .project-description {
+      margin-top: 70px;
+      padding: 10px 50px;
+      text-align: center;
+      h3 {
+        font-size: $h3SectionMd;
+      }
+      p {
+        font-size: $pSectionMd;
+        padding-right: 0;
+        &::before {
+          font-size: $pBeforeElementFontSizeMd;
+        }
+      }
+      a {
+        margin: 10px 0;
+        font-size: $btnSectionMd;
+        padding: 9px 13px;
+      }
+    }
+  }
+  .contact {
+    .heading {
+      h2 {
+        font-size: $h2FontSizeMd;
+      }
+    }
+    .contact-info {
+      .phone-mail {
+        h3 {
+          top: 15px;
+        }
+        .phone {
+          font-size: $pSectionLg;
+        }
+        .email {
+          font-size: $pSectionLg;
+        }
+      }
+      .social-links {
+        a {
+          padding: 13px;
+          font-size: 25px;
+          .fa-facebook-f {
+            width: 28px;
+          }
+          .fa-instagram {
+            width: 28px;
+          }
+          .fa-linkedin-in {
+            width: 28px;
+          }
+          .fa-phone {
+            width: 28px;
+          }
+          .fa-envelope {
+            width: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  //CV
+  .cv-nav {
+    nav {
+      .logo {
+        h2 {
+          font-size: $logoFontSizeMd;
+        }
+      }
+    }
+    .overlay {
+      .wrap {
+        .wrap-nav {
+          .navigation-item {
+            &::before {
+              font-size: $beforeElementNavLinkMd;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cv {
+    .img-section {
+      h2 {
+        font-size: $h2ResumeFontSizeMd;
+      }
+      .id-img {
+        padding-top: 50px;
+        width: 330px;
+        height: 470px;
+      }
+      .resume-contact {
+        .resume-contact-info {
+          padding-top: 100px;
+          h3 {
+            font-size: $h3ResumeFontSizeMd;
+          }
+          p {
+            font-size: $pResumeFontSizeMd;
+            letter-spacing: 1.5px;
+          }
+        }
+        .social-links {
+          a {
+            font-size: $socialLinksFontSize;
+          }
+        }
+        .language-education {
+          h3 {
+            font-size: $h3ResumeFontSizeMd;
+          }
+          p {
+            font-size: $pResumeFontSizeMd;
+            letter-spacing: 1.5px;
+          }
+          h4 {
+            font-size: $h3ResumeFontSizeMd;
+          }
+        }
+      }
+    }
+    .id-info {
+      border-left: 2px solid white;
+      padding-bottom: 80px;
+      h3 {
+        font-size: $h3ResumeFontSizeMd;
+      }
+      p {
+        font-size: $pResumeFontSizeMd;
+        letter-spacing: 1.5px;
+      }
+      .skills {
+        h3 {
+          font-size: $h3ResumeFontSizeMd;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.9px) {
+  .loading {
+    font-size: $preloaderFontSizeSm;
+  }
+  nav {
+    .logo {
+      h2 {
+        font-size: $logoFontSizeSm;
+      }
+    }
+    .button {
+      width: 50px;
+      height: 50px;
+      .btn-open {
+        top: 23px;
+        left: 9px;
+      }
+      .btn-close {
+        top: 23px;
+        left: 10px;
+      }
+    }
+  }
+  .overlay {
+    .wrap {
+      .wrap-nav {
+        .navigation-item {
+          &::before {
+            font-size: $beforeElementNavLinkSm;
+          }
+          .nav-link {
+            font-size: $navLinkFontSizeSm;
+          }
+        }
+      }
+    }
+  }
+  .top-btn {
+    a {
+      padding: 10px 12.5px;
+      font-size: 21px;
+    }
+  }
+  .landing-page {
+    .heading {
+      h1 {
+        font-size: $h1HeadingFontSizeSm;
+      }
+      .typing {
+        font-size: $typingFontSizeSm;
+      }
+    }
+  }
+  .about {
+    text-align: center;
+    .about-img {
+      display: none;
+      .img {
+        width: 300px;
+        height: 380px;
+        margin-top: 0;
+      }
+    }
+    .about-info {
+      padding-left: 30px;
+      padding-right: 30px;
+      h2 {
+        font-size: $h2FontSizeSm;
+      }
+      h3 {
+        font-size: $h3SectionSm;
+      }
+      p {
+        font-size: $pSectionSm;
+      }
+      .btn-resume {
+        padding: 10px 15px;
+      }
+      .social-links {
+        margin-left: 22px;
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .portfolio {
+    text-align: center;
+    .heading {
+      text-align: center;
+      position: relative;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      h2 {
+        font-size: $h2FontSizeSm;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .project-img {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      .portfolio-img {
+        width: 350px;
+        height: 390px;
+      }
+    }
+    .project-description {
+      p {
+        font-size: $pSectionSm;
+        padding-right: 0;
+      }
+    }
+    .show-desc {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .desc-right {
+      padding-left: 0px;
+    }
+  }
+  .contact {
+    .heading {
+      padding-top: 40px 0;
+      h2 {
+        font-size: $h2FontSizeSm;
+      }
+    }
+    .contact-info {
+      .phone-mail {
+        h3 {
+          top: 0;
+        }
+        .phone {
+          font-size: $pSectionSm;
+        }
+        .email {
+          font-size: $pSectionSm;
+        }
+      }
+      .social-links {
+        padding-bottom: 0;
+        margin-top: 0;
+        a {
+          padding: 11px;
+          font-size: 20px;
+        }
+        .phone-mail {
+          .phone {
+            font-size: 22px;
+          }
+          .email {
+            margin-top: -35px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .signature {
+      display: block;
+      text-align: center;
+
+      h4,
+      h5 {
+        font-size: $signatureFontSizeSm;
+      }
+      h5 {
+        margin-top: 10px;
+      }
+    }
+  }
+  .cv-nav {
+    nav {
+      .logo {
+        h2 {
+          font-size: $logoFontSizeSm;
+        }
+      }
+    }
+  }
+  .cv {
+    .img-section {
+      .id-img {
+        width: 350px;
+        height: 500px;
+      }
+      h2 {
+        font-size: $h2ResumeFontSizeSm;
+      }
+      .resume-contact {
+        .resume-contact-info {
+          h3 {
+            font-size: $h3ResumeFontSizeSm;
+          }
+          p {
+            font-size: $pResumeFontSizeSm;
+          }
+        }
+        .language-education {
+          h3 {
+            font-size: $h3ResumeFontSizeSm;
+          }
+          p {
+            font-size: $pResumeFontSizeSm;
+          }
+          h4 {
+            font-size: $h3ResumeFontSizeSm;
+          }
+        }
+      }
+    }
+    .id-info {
+      h3 {
+        font-size: $h3ResumeFontSizeSm;
+      }
+      p {
+        font-size: $pResumeFontSizeSm;
+        text-align: center;
+      }
+      .skills {
+        h3 {
+          font-size: $h3ResumeFontSizeSm;
+        }
+        .skill {
+          .skill-img {
+            .el-1 {
+              img {
+                width: 70px;
+                height: 70px;
+              }
+              h5 {
+                font-size: $pSectionSm;
+              }
+            }
+            .el-2 {
+              img {
+                width: 70px;
+                height: 70px;
+              }
+              h5 {
+                font-size: $pSectionSm;
+              }
+            }
+          }
+        }
+      }
+      .cv-button {
+        a {
+          font-size: $btnSectionSm;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .loading {
+    font-size: $preloaderFontSizeMobile;
+  }
+  nav {
+    .logo {
+      left: 5%;
+      h2 {
+        font-size: $logoFontSizeMobile;
+      }
+    }
+    .button {
+      width: 45px;
+      height: 45px;
+      right: 5%;
+      .btn-open {
+        top: 20.5px;
+        left: 7px;
+        width: 13px;
+        height: 2px;
+        &::before {
+          width: 28px;
+          height: 2px;
+        }
+        &::after {
+          width: 23px;
+          height: 2px;
+        }
+      }
+      .btn-close {
+        top: 20.5px;
+        left: 10px;
+        width: 25px;
+        height: 2px;
+      }
+      &:hover .btn-open {
+        width: 28px;
+        height: 2px;
+      }
+      &:hover .btn-open::before {
+        width: 28px;
+      }
+      &:hover .btn-open::after {
+        width: 28px;
+      }
+      &:hover .btn-close {
+        width: 28px;
+        left: 7px;
+        height: 2px;
+      }
+      &:hover .btn-close::before {
+        width: 19px;
+        height: 2px;
+      }
+      &:hover .btn-close::after {
+        width: 19px;
+        height: 2px;
+      }
+    }
+  }
+  .overlay {
+    .wrap {
+      .wrap-nav {
+        .navigation-item {
+          &::before {
+            font-size: $beforeElementNavLinkSm;
+          }
+          .nav-link {
+            font-size: $navLinkFontSizeMobile;
+          }
+        }
+      }
+    }
+  }
+  .top-btn {
+    right: 5%;
+    a {
+      padding: 7px 9.5px;
+    }
+  }
+  .landing-page {
+    background-position: center;
+    .heading {
+      left: 2%;
+      top: 75%;
+      h1 {
+        font-size: $h1HeadingFontSizeMobile;
+      }
+      .typing {
+        font-size: $typingFontSizeMobile;
+      }
+    }
+  }
+  .about {
+    .about-info {
+      padding-right: 25px;
+      padding-left: 25px;
+      h2 {
+        font-size: $h2FontSizeMobile;
+      }
+      h3 {
+        font-size: $h3SectionMobile;
+        padding-top: 15px;
+      }
+      p {
+        font-size: $pSectionMobile;
+      }
+      .btn-resume {
+        font-size: $btnSectionMobile;
+      }
+      .social-links {
+        margin-left: 22px;
+        a {
+          font-size: 21px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .portfolio {
+    .heading {
+      h2 {
+        font-size: $h2FontSizeMobile;
+      }
+    }
+    .project-img {
+      .portfolio-img {
+        width: 300px;
+        height: 360px;
+      }
+    }
+    #motel__konak {
+      margin-top: 80px;
+    }
+    .project-description {
+      margin-top: 50px;
+      padding-top: 10px;
+      padding-left: 35px;
+      padding-right: 35px;
+      h3 {
+        font-size: $h3SectionMobile;
+      }
+      p {
+        font-size: $pSectionMobile;
+        &::before {
+          font-size: $pBeforeElementFontSizeMobile;
+        }
+      }
+      a {
+        margin-top: 10px;
+        font-size: $btnSectionMobile;
+        padding: 10px 15px;
+        margin-bottom: 70px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .psd {
+        margin-left: 0;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -100%);
+      }
+    }
+  }
+  .contact {
+    padding-top: 0;
+    .heading {
+      margin-top: 60px;
+      padding: 0;
+      h2 {
+        font-size: $h2FontSizeMobile;
+      }
+    }
+    .contact-info {
+      .phone-mail {
+        margin-top: 30px;
+        h3 {
+          position: absolute;
+          top: 20px;
+        }
+        .phone {
+          font-size: $pSectionMobile;
+        }
+        .email {
+          font-size: $pSectionMobile;
+        }
+      }
+      .social-links {
+        margin-top: 0;
+        #phone {
+          display: none;
+        }
+        #mail {
+          display: none;
+        }
+        .phone-mail-mobile {
+          text-align: center;
+          display: block;
+          margin-top: 35px;
+        }
+        a {
+          padding: 10px;
+          font-size: 20px;
+        }
+        .phone-mail {
+          padding-right: 17px;
+          .phone {
+            font-size: 18px;
+            margin-top: 20px;
+          }
+          .email {
+            margin-top: -30px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .signature {
+      margin-top: 0px;
+      h4,
+      h5 {
+        font-size: $signatureFontSizeMobile;
+      }
+      h5 {
+        margin-top: 10px;
+      }
+    }
+  }
+  .cv-nav {
+    nav {
+      .logo {
+        h2 {
+          font-size: $logoFontSizeMobile;
+        }
+      }
+    }
+  }
+  .cv {
+    margin-top: 50px;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 100px;
+    .img-section {
+      border-left: none;
+      border-right: none;
+      h2 {
+        padding-top: 30px;
+        font-size: $h2ResumeFontSizeMobile;
+      }
+      .id-img {
+        width: 320px;
+        height: 450px;
+      }
+      .resume-contact {
+        .resume-contact-info {
+          h3 {
+            font-size: $h3ResumeFontSizeMobile;
+          }
+          p {
+            font-size: $pResumeFontSizeMobile;
+          }
+        }
+        .social-links {
+          a {
+            font-size: $socialLinksFontSize;
+          }
+        }
+        .language-education {
+          h3 {
+            font-size: $h3ResumeFontSizeMobile;
+          }
+          p {
+            font-size: $pResumeFontSizeMobile;
+          }
+          h4 {
+            font-size: $h3ResumeFontSizeMobile;
+          }
+        }
+      }
+    }
+    .id-info {
+      border-left: none;
+      border-right: none;
+      h3 {
+        font-size: $h3ResumeFontSizeMobile;
+      }
+      p {
+        font-size: $pResumeFontSizeMobile;
+        padding: 0 20px;
+      }
+      .skills {
+        h3 {
+          font-size: $h3ResumeFontSizeMobile;
+        }
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        h5 {
+          font-size: $h5SkillsFontSizeMobile;
+        }
+      }
+      .cv-button {
+        margin-top: 60px;
+        a {
+          font-size: $btnSectionMobile;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+/*Media query END*/

@@ -1,0 +1,11 @@
+/*Progress bar START*/
+#progress{
+    background-color:gray;
+    height: 10px;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/*Progress bar END*/

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Popins', sans-serif;
+    overflow-x: hidden;
+}
+@import './var&mixins';
+@import './preloader';
+@import './progressBar';
+@import './topBtn';
+@import './navbar';
+@import './landingPage';
+@import './about';
+@import './portfolio';
+@import './contact';
+@import './cv';
+@import './mediaquery';

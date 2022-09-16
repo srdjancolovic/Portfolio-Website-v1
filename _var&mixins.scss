@@ -1,0 +1,332 @@
+/*Preloader font size*/
+$preloaderFontSizeXl: 45px;
+$preloaderFontSizeSm: 30px;
+$preloaderFontSizeMobile: 25px;
+
+/*Navbar*/
+$navLinkFontSizeXL: 40px;
+$navLinkFontSizeSm: 30px;
+$navLinkFontSizeMobile: 22px;
+
+$beforeElementNavLinkXl: 140px;
+$beforeElementNavLinkLg: 100px;
+$beforeElementNavLinkMd: 70px;
+$beforeElementNavLinkSm: 40px;
+
+$logoFontSizeXl: 58px;
+$logoFontSizeMd: 53px;
+$logoFontSizeSm: 43px;
+$logoFontSizeMobile: 38px;
+
+/*Landing page*/
+$h1HeadingFontSizeXl: 75px;
+$h1HeadingFontSizeMd: 60px;
+$h1HeadingFontSizeSm: 45px;
+$h1HeadingFontSizeMobile: 40px;
+
+$typingFontSizeXl: 33px;
+$typingFontSizeMd: 27px;
+$typingFontSizeSm: 20px;
+$typingFontSizeMobile: 18px;
+
+/*Section*/
+$h2FontSizeXl: 150px;
+$h2FontSizeLg: 120px;
+$h2FontSizeMd: 90px;
+$h2FontSizeSm: 70px;
+$h2FontSizeMobile: 55px;
+
+$h3SectionXl: 45px;
+$h3SectionLg: 38px;
+$h3SectionMd: 33px;
+$h3SectionSm: 31px;
+$h3SectionMobile: 27px;
+
+$pSectionXl: 20px;
+$pSectionLg: 19px;
+$pSectionMd: 18px;
+$pSectionSm: 18px;
+$pSectionMobile: 17px;
+
+$btnSectionXl: 18px;
+$btnSectionMd: 17px;
+$btnSectionSm: 17px;
+$btnSectionMobile: 16px;
+
+$pBeforeElementFontSizeXl: 200px;
+$pBeforeElementFontSizeLg: 150px;
+$pBeforeElementFontSizeMd: 150px;
+$pBeforeElementFontSizeSm: 150px;
+$pBeforeElementFontSizeMobile: 120px;
+
+$signatureFontSizeXl: 16px;
+$signatureFontSizeSm: 14px;
+$signatureFontSizeMobile: 12px;
+
+$beforeDescElementColor: rgb(201, 187, 187);
+
+/*Resume*/
+$h2ResumeFontSizeXl: 45px;
+$h2ResumeFontSizeMd: 40px;
+$h2ResumeFontSizeSm: 40px;
+$h2ResumeFontSizeMobile: 30px;
+
+$h3ResumeFontSizeXl: 37px;
+$h3ResumeFontSizeMd: 35px;
+$h3ResumeFontSizeSm: 35px;
+$h3ResumeFontSizeMobile: 27px;
+
+$h5SkillsFontSizeMobile: 18px;
+
+$pResumeFontSizeXl: 20px;
+$pResumeFontSizeMd: 21px;
+$pResumeFontSizeSm: 21px;
+$pResumeFontSizeMobile: 17px;
+
+$socialLinksFontSize: 20px;
+
+/*Mixin*/
+
+@mixin button {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: $btnSectionXl;
+  letter-spacing: 3px;
+  padding: 15px 20px;
+  margin: 30px 0;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  position: relative;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  &::before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+  }
+  &::after {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s ease-in-out;
+  }
+  &:hover::before,
+  &:hover:after {
+    width: 100%;
+    height: 100%;
+    transition: 0.3 ease-in-out;
+  }
+}
+
+/*Headings and text mixins*/
+
+@mixin h2-heading {
+  color: rgb(134, 131, 131);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: $h2FontSizeXl;
+  opacity: 0.2;
+  letter-spacing: 5px;
+}
+@mixin h2-about {
+  position: relative;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+@mixin h2-portfolio {
+  padding-bottom: 20px;
+  font-size: $h3SectionXl;
+  letter-spacing: 2px;
+}
+@mixin p-about {
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+@mixin p-portfolio {
+  font-size: $pSectionXl;
+  padding-bottom: 20px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  position: relative;
+  &::before {
+    content: attr(data-before);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $pBeforeElementFontSizeXl;
+    opacity: 0.4;
+    letter-spacing: 15px;
+    color: $beforeDescElementColor;
+  }
+}
+
+@mixin social-links-about {
+  margin-top: 25px;
+  a {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin-right: 22px;
+    border: 2px solid white;
+    padding: 15px;
+    transition: 0.7s ease;
+    .fa-facebook-f {
+      width: 24px;
+      transition: 0.7s ease;
+    }
+    .fa-instagram {
+      width: 24px;
+      transition: 0.7s ease;
+    }
+    .fa-linkedin-in {
+      width: 24px;
+      transition: 0.7s ease;
+    }
+    .fa-github {
+      width: 24px;
+      transition: 0.7s ease;
+    }
+    &:hover {
+      background: white;
+    }
+    &:hover .fa-facebook-f {
+      color: #4267b2;
+      transform: scale(1.3);
+    }
+    &:hover .fa-instagram {
+      color: #e1306c;
+      transform: scale(1.3);
+    }
+    &:hover .fa-linkedin-in {
+      color: #2867b2;
+      transform: scale(1.3);
+    }
+    &:hover .fa-github {
+      color: #020202;
+      transform: scale(1.3);
+    }
+  }
+}
+@mixin social-links-contact {
+  margin-top: 25px;
+  a {
+    color: white;
+    font-size: 37px;
+    margin-right: 22px;
+    border: 2px solid white;
+    padding: 15px;
+    transition: 0.7s ease;
+    .fa-facebook-f {
+      width: 35px;
+      transition: 0.7s ease;
+    }
+    .fa-instagram {
+      width: 35px;
+      transition: 0.7s ease;
+    }
+    .fa-linkedin-in {
+      width: 35px;
+      transition: 0.7s ease;
+    }
+    .fa-phone {
+      width: 35px;
+      transition: 0.7s ease;
+    }
+    .fa-envelope {
+      width: 35px;
+      transition: 0.7s ease;
+    }
+    &:hover {
+      background: white;
+    }
+    &:hover .fa-facebook-f {
+      color: #4267b2;
+      transform: scale(1.3);
+    }
+    &:hover .fa-instagram {
+      color: #e1306c;
+      transform: scale(1.3);
+    }
+    &:hover .fa-linkedin-in {
+      color: #2867b2;
+      transform: scale(1.3);
+    }
+    &:hover .fa-phone {
+      color: green;
+      transform: scale(1.3);
+    }
+    &:hover .fa-envelope {
+      color: rgb(41, 76, 231);
+      transform: scale(1.3);
+    }
+  }
+}
+@mixin social-links-contact-resume {
+  margin-top: 25px;
+  a {
+    color: white;
+    font-size: $socialLinksFontSize;
+    font-weight: bold;
+    margin-right: 15px;
+    border: 2px solid white;
+    padding: 12px;
+    transition: 0.7s ease;
+    .fa-facebook-f {
+      width: 20px;
+      transition: 0.7s ease;
+    }
+    .fa-instagram {
+      width: 20px;
+      transition: 0.7s ease;
+    }
+    .fa-linkedin-in {
+      width: 20px;
+      transition: 0.7s ease;
+    }
+    .fa-github {
+      width: 20px;
+      transition: 0.7s ease;
+    }
+    &:hover {
+      background: white;
+    }
+    &:hover .fa-facebook-f {
+      color: #4267b2;
+      transform: scale(1.3);
+    }
+    &:hover .fa-instagram {
+      color: #e1306c;
+      transform: scale(1.3);
+    }
+    &:hover .fa-linkedin-in {
+      color: #2867b2;
+      transform: scale(1.3);
+    }
+    &:hover .fa-github {
+      color: #020202;
+      transform: scale(1.3);
+    }
+  }
+}

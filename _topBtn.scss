@@ -1,0 +1,28 @@
+/*Top btn START*/
+.top-btn{
+    position: fixed;
+    top: 90%;
+    right: 11%;
+    z-index: 90;
+    transition: opacity 1s ease;
+    opacity: 1;
+    a{
+        padding: 16px 17.5px;
+        border: 2px solid rgb(112, 106, 106);
+        font-size: 25px;
+        color: rgb(112, 106, 106);
+        opacity: .4;
+        .fa-chevron-up{
+            transition: transform .7s ease;
+
+        }
+    }
+    &:hover .fa-chevron-up{
+        transform: translateY(-7px);
+       
+    }
+}
+.hide{
+    opacity: 0;
+}
+/*Top btn END*/
